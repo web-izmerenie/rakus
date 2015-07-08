@@ -1,0 +1,6 @@
+<?
+$sSectionName = "компрессоры";
+$arDirProperties = Array(
+
+);
+?>
