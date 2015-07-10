@@ -31,12 +31,7 @@ global $currentUrl;
 
 	<body>
 		<?$APPLICATION->ShowPanel();?>
-		<div id="page"
-			<?if($currentUrl === '/'){?>
-				class="main_content">
-			<?}else{?>
-				class="inside_content"
-			<?}?>>
+		<div id="page" class="<?if($currentUrl === '/'){?>main_content<?}else{?>inside_content<?}?>">
 
 			<header class="clearfix">
 				<div class="container">

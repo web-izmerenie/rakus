@@ -19,12 +19,18 @@ $(function() {
 	}
 	
 	function addFormModel(){
-		var clickItem = $('.catalog_table .popupOpen');
+		var clickItem = $('.popupOpen');
 		var targetInput = $('.popupForm .sendForm form input[type="hidden"]'); 
 		
 		clickItem.click(function(){
 			var model = $(this).closest('tr').find('.td_2 a').html();
-			targetInput.val(model);
+			var model2 = $('.item_details .title h1').html();
+			
+			if($('.item_details').length) {
+				targetInput.val(model2);
+			}else{
+				targetInput.val(model);	
+			}
 		});
 	}
 	

@@ -33,7 +33,11 @@ $this->setFrameMode(true);?>
 					<?foreach($arResult['ITEMS'] as $arItem){
 					$photo = CFile::ResizeImageGet($arItem['DETAIL_PICTURE'], array('width'=>150, 'height'=>85), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
 						<tr>
-							<td class="td_1"><a href="<?=$arItem['DETAIL_PAGE_URL'];?>"><img src="<?=$photo['src'];?>" alt="" /></a></td>
+							<td class="td_1">
+								<a href="<?=$arItem['DETAIL_PAGE_URL'];?>">
+									<img src="<?=$photo['src'];?>" alt="<?=$arItem['DETAIL_PICTURE']['ALT']?>" />
+								</a>
+							</td>
 							<td class="td_2"><a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="name"><?=$arItem['NAME'];?></a></td>
 							<td class="td_3"><?=$arItem['PROPERTIES']['ATT_PRESSURE']['VALUE'];?> бар.</td>
 							<td class="td_4"><?=$arItem['PROPERTIES']['ATT_PERFOMANCE']['VALUE'];?> м³/ мин.</td>
