@@ -1,3 +1,12 @@
+				<?$APPLICATION->IncludeComponent(
+					"bitrix:main.include",
+					"",
+					Array(
+						"AREA_FILE_SHOW" => "page",
+						"AREA_FILE_SUFFIX" => "bottom_text",
+						"EDIT_TEMPLATE" => ""
+					)
+				);?>
 				<div class="contact_block">
 					<div class="text">Быстрая Аренда</div>
 					<div class="phone">
@@ -59,22 +68,38 @@
 					</div>
 				</div>
 				
-				<div class="help_block">
-					<form method="post" action="/ajax/application.php">
-						<div class="text">
-							<p>Если вы не уверены в выборе или не нашли, что искали, опишите здесь свою проблему, а мы подготовим для вас предложение и сами с вами свяжемся. </p>
-							<p>Не забудте указать контактную информацию!</p>
-							 <textarea name="area"></textarea>
-						</div>
-						<div class="send">
-							<input type="submit" value="Отправить" class="border_btn border_btn-sub">
-							<span class="ieb">Ответим в течение часа</span>
-						</div>
-					</form>	
-				</div>
-
+				<?if(!defined('NO_FORM')){?>
+					<div class="help_block">
+						<form method="post" action="/ajax/application.php">
+							<div class="text">
+								<p>Если вы не уверены в выборе или не нашли, что искали, опишите здесь свою проблему, а мы подготовим для вас предложение и сами с вами свяжемся. </p>
+								<p>Не забудте указать контактную информацию!</p>
+								 <textarea name="area"></textarea>
+							</div>
+							<div class="send">
+								<input type="submit" value="Отправить" class="border_btn border_btn-sub">
+								<span class="ieb">Ответим в течение часа</span>
+							</div>
+						</form>	
+					</div>
+				<?}?>
+				<?$APPLICATION->IncludeComponent(
+					"bitrix:menu",
+					"bottom_menu",
+					Array(
+						"ROOT_MENU_TYPE" => "left",
+						"MENU_CACHE_TYPE" => "N",
+						"MENU_CACHE_TIME" => "3600",
+						"MENU_CACHE_USE_GROUPS" => "Y",
+						"MENU_CACHE_GET_VARS" => array(""),
+						"MAX_LEVEL" => "1",
+						"CHILD_MENU_TYPE" => "left",
+						"USE_EXT" => "N",
+						"DELAY" => "Y",
+						"ALLOW_MULTI_SELECT" => "N"
+					)
+				);?>
 			</div>		
-			
 		  	<footer>
 		  		<div class="container">
 		  			<a href="http://web-izmerenie.ru/" class="dev ieb">Сделано <span>в</span></a>

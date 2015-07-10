@@ -16,14 +16,14 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"О компании", 
-		"/o-kompanii.php", 
+		"/o-kompanii/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Контакты", 
-		"/kontakty.php", 
+		"/kontakty/", 
 		Array(), 
 		Array(), 
 		"" 
