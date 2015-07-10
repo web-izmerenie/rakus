@@ -3,18 +3,30 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/urlrewrite.
 
 CHTTP::SetStatus("404 Not Found");
 @define("ERROR_404","Y");
+define('NO_FORM', 'Y');
+define('NO_CONTACTS_BOTTOM', 'Y');
 
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
-$APPLICATION->SetTitle("404 Not Found");
+$APPLICATION->SetTitle("Такой страницы нет");?>
 
-$APPLICATION->IncludeComponent("bitrix:main.map", ".default", Array(
-	"LEVEL"	=>	"3",
-	"COL_NUM"	=>	"2",
-	"SHOW_DESCRIPTION"	=>	"Y",
-	"SET_TITLE"	=>	"Y",
-	"CACHE_TIME"	=>	"36000000"
-	)
-);
+<div class="block_error">
+	<div class="error">
+		<span>Такой страницы нет</span>
+	</div>
+</div>
+<div class="breadcrumbs-btn">
+	<ul>
+		<li>
+			<a href="/">На главную</a>
+		</li>
+		<li>
+			<a href="/kompressory/">Компрессоры</a>
+		</li>
+		<li>
+			<a href="/dop-oborudovanie/">Доп. Оборудование</a>
+		</li>
+	</ul>
+</div>
 
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -13,7 +13,7 @@
 $this->setFrameMode(true);
 ?>
 <?if($arResult){?>
-	<div class="informations_block">
+	<div class="informations_block<?if(defined('CONTACT')){?>_2<?}?>">
 		<span><?=$arResult['DETAIL_TEXT'];?></span>
 	</div>
 <?}?>

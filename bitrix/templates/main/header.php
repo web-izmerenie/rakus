@@ -3,6 +3,11 @@ $tplPath = $APPLICATION->GetTemplatePath();
 $currentUrl = $APPLICATION->GetCurPageParam();
 global $tplPath;
 global $currentUrl;
+
+if(defined('CONTACT'))
+	$main_class = 'сontent-contact';
+if(defined('ERROR_404'))
+	$main_class = 'сontent-404';
 ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js ielt10 ielt9 ielt8 ielt7"> <![endif]-->
@@ -111,4 +116,4 @@ global $currentUrl;
 				</div>
 			</header>
 
-			<div id="content" class="clearfix">
+			<div id="content" class="clearfix <?=$main_class;?>">

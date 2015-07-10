@@ -985,6 +985,11 @@ footer .dev:after {
     text-transform: uppercase;
     font-weight: 400;
 }
+.informations_block span b{
+    font-size:24px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
 .contacts_block{
     height: 250px;
     padding:97px 0;
