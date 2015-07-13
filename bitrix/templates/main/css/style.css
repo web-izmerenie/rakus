@@ -1344,3 +1344,101 @@ footer .dev:after {
     height: 207px;
     overflow: hidden;
 }
+.sale .sale_block{
+	background: url('../images/bg_sale.png') repeat center top / cover;
+}
+.sale .sale_block h1{
+	text-align: center;
+	color: #43607a;
+	font: 500 50px Ubuntu;
+	text-transform: uppercase;
+	padding-top: 100px;
+	padding-bottom: 8px;
+	
+}
+.sale .sale_block h2{
+	text-align: center;
+	color: #43607a;
+	font: 300 26px Ubuntu;
+	text-transform: uppercase;
+}
+.sale .sale_block ul{
+	width: 885px;
+	margin: 74px auto 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	list-style: none;
+	padding-bottom: 55px;
+}
+.sale .sale_block ul li{
+	width: 270px;
+}
+.sale .sale_block ul li img{
+	display: block;
+	margin: 0 auto 25px;
+}
+.sale .sale_block ul li p{
+	display: inline-block;
+	color: #af9a66;
+	font: 400 15px Ubuntu;
+	width: 220px;
+	vertical-align: top;
+}
+.sale .sale_block ul li span{
+	display: inline-block;
+	color: #dc980e;
+	font: 700 48px / 30px Ubuntu;
+	vertical-align: top;
+	width: 45px;
+}
+.sale_block2{
+	background-image: -ms-linear-gradient(top, #EABC59 0%, #CB992F 100%);
+	background-image: -moz-linear-gradient(top, #EABC59 0%, #CB992F 100%);
+	background-image: -o-linear-gradient(top, #EABC59 0%, #CB992F 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EABC59), color-stop(100, #CB992F));
+	background-image: -webkit-linear-gradient(top, #EABC59 0%, #CB992F 100%);
+	background-image: linear-gradient(to bottom, #EABC59 0%, #CB992F 100%);
+	padding: 50px 0 42px;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.sale_block2 span{
+	font: 400 24px / 18px Ubuntu;
+}
+.sale_block2 p{
+	font: 700 34px / 62px Ubuntu;
+}
+
+.sale_block3 ul{
+	width: 860px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	margin: 60px auto 0;
+	color: #555f69;
+	font: 400 15px / 26px Ubuntu;
+}
+.sale_block3 ul li{
+	width: 258px;
+}
+.sale_block3 ul li p{
+	color: #c7901d;
+	font: 700 18px / 26px Ubuntu;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+}
+.sale_block3{
+	margin-bottom: 30px;
+}
