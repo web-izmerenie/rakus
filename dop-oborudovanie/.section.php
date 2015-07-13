@@ -1,5 +1,5 @@
 <?
-$sSectionName = "доп. оборудование";
+$sSectionName = "компрессоры";
 $arDirProperties = Array(
 
 );

@@ -21,7 +21,7 @@ $photo = CFile::ResizeImageGet($arResult['DETAIL_PICTURE'], array('width'=>540, 
 					<h3><?=$arResult['PROPERTIES']['ATT_VIEW']['VALUE'];?> компрессор</h3>
 				</div>
 				<div class="inr_right">
-					<a href="/kompressory/" class="border_btn">Каталог →</a>
+					<a href="<?=$APPLICATION->GetCurDir();?>" class="border_btn">Каталог →</a>
 				</div>
 			</div>
 			<div class="item_details_center clearfix">

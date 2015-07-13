@@ -8,6 +8,8 @@ if(defined('CONTACT'))
 	$main_class = 'сontent-contact';
 if(defined('ERROR_404'))
 	$main_class = 'сontent-404';
+if(defined('DOP_CATALOG'))
+	$main_class = 'content-item2';
 ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js ielt10 ielt9 ielt8 ielt7"> <![endif]-->

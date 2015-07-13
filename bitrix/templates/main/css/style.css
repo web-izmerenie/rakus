@@ -515,7 +515,8 @@ footer .dev:after {
 }
 .item_details_center .list_desc li span {
 	display: inline-block;
-	width: 208px;
+	width: 170px;
+	margin-right: 38px;
 }
 .item_details .btn_buy {
 	text-align: center;
