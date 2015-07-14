@@ -25,7 +25,9 @@ if(defined('SALE'))
 		<title><?$APPLICATION->ShowTitle(false);?></title>
 		<?$APPLICATION->ShowMeta("keywords");?>
 		<?$APPLICATION->ShowMeta("description");?>
-		<?$APPLICATION->ShowHead();?>
+		<?if($USER->IsAuthorized()){?>
+			<?$APPLICATION->ShowHead()?>
+		<?}?>
 		<meta name="viewport" content="980">
 		<link rel="stylesheet" href="<?=$tplPath;?>css/animate.css">
 		<link rel="stylesheet" type="text/css" href="<?=$tplPath;?>css/style.css" />
