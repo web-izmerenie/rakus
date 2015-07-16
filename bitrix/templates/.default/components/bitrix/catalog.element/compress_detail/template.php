@@ -32,7 +32,7 @@ $photo = CFile::ResizeImageGet($arResult['DETAIL_PICTURE'], array('width'=>540, 
 					<ul class="list_desc"> 
 						<li><span>Рабочее давление</span><?=$arResult['PROPERTIES']['ATT_PRESSURE']['VALUE'];?> бар</li>
 						<li><span>Производительность</span><?=$arResult['PROPERTIES']['ATT_PERFOMANCE']['VALUE'];?> м³/мин</li>
-						<li><span>Количество постов</span><?=$arResult['PROPERTIES']['ATT_POST']['VALUE'];?> ¾</li>
+						<li><span>Количество постов ¾</span><?=$arResult['PROPERTIES']['ATT_POST']['VALUE'];?></li>
 						<li><span>Расход ДТ</span><?=$arResult['PROPERTIES']['ATT_EXPENSE']['VALUE'];?> л/ч</li>
 						<li>
 							<span>Размеры</span>

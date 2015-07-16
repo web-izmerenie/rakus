@@ -34,7 +34,7 @@ $APPLICATION->SetTitle("О компании");
 	</ul>
 	<ul class="advantage-list advantage-list_2">
 		<li>
-			<div class="<?=$tplPath;?>advantage-list_img">
+			<div class="advantage-list_img">
 				<img src="<?=$tplPath;?>images/advantages-icon4.png" alt=""/>
 			</div>
 			<span>Новейшие технологии</span>

@@ -472,6 +472,9 @@ footer .dev:after {
 	cursor: pointer;
 	margin: 0 0 0 15px;
 }
+.help_block .send .border_btn-sub{
+	line-height: 2;
+}
 
 .item_details {
 	margin: 45px 0 0;
@@ -1442,3 +1445,18 @@ footer .dev:after {
 .sale_block3{
 	margin-bottom: 30px;
 }
+.download{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	list-style: outside none none;
+	width: 75%;
+	float: left;
+	align-items: center;
+	margin-top: 20px;
+}
+
+
