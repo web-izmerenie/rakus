@@ -101,21 +101,19 @@
         var $val =  $('.help_block .text textarea');
         $( "#name-input" ).keyup(function( event ) {
             var value = $(this).val();
-            if (value != '') {
-                if (!this.value.match(/^[a-zA-Zа-яА-Я]+$/)) {
-                    $(this).addClass('errorInput');
-                }
-                else {
-                    $(this).removeClass('errorInput');
-                }
-            }
+            if (value === '') {
+                        $(this).removeClass('validInput').addClass('errorInput');
+                    }
+                    else {
+                        $(this).removeClass('errorInput').addClass('validInput');
+                    }
 
         });
         $( "#phone-mail" ).keyup(function( event ) {
             var value = $(this).val();
 
             if (value != '') {
-                if ((!this.value.match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/)) && (!this.value.match(/^\d+$/))) {
+                if (!this.value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/)) {
                     $(this).removeClass('validInput').addClass('errorInput');
 
                 }
@@ -134,24 +132,19 @@
 
             $( "#name-input" ).each(function( event ) {
                 var value = $(this).val();
-                if (value != '') {
-                    if (!this.value.match(/^[a-zA-Zа-яА-Я]+$/)) {
-                        $(this).removeClass('validInput').addClass('errorInput');
-
-                    }
-                    else {
-                        $(this).removeClass('errorInput').addClass('validInput');
-
-                    }
+                if (value === '') {
+                    $(this).removeClass('validInput').addClass('errorInput');
                 }
-
+                else {
+                    $(this).removeClass('errorInput').addClass('validInput');
+                }
             });
             $( "#phone-mail" ).each(function( event ) {
                 var value = $(this).val();
                 if (value != '') {
 
 
-                    if ((!this.value.match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/)) && (!this.value.match(/^\d+$/))) {
+                    if (!this.value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/)){
                         $(this).removeClass('validInput').addClass('errorInput');
 
                     }
@@ -189,34 +182,26 @@
 
         $('#name-input').keypress(function(){
             var value = $(this).val();
-            if (value != '') {
-                if (!this.value.match(/^[a-zA-Zа-яА-Я]+$/)) {
-                    $(this).removeClass('validInput').addClass('errorInput');
-
-                }
-                else {
-                    $(this).removeClass('errorInput').addClass('validInput');
-
-                }
+            if (value === '') {
+                $(this).removeClass('validInput').addClass('errorInput');
+            }
+            else {
+                $(this).removeClass('errorInput').addClass('validInput');
             }
         });
         $('#name-input').focusout(function(){
             var value = $(this).val();
-            if (value != '') {
-                if (!this.value.match(/^[a-zA-Zа-яА-Я]+$/)) {
-                    $(this).removeClass('validInput').addClass('errorInput');
-
-                }
-                else {
-                    $(this).removeClass('errorInput').addClass('validInput');
-
-                }
-            }
+            if (value === '') {
+                        $(this).removeClass('validInput').addClass('errorInput');
+                    }
+                    else {
+                        $(this).removeClass('errorInput').addClass('validInput');
+                    }
         });
         $('#phone-mail').keypress(function(){
             var value = $(this).val();
             if (value != '') {
-                if ((!this.value.match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/)) && (!this.value.match(/^\d+$/))) {
+                if (!this.value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/)){
                     $(this).removeClass('validInput').addClass('errorInput');
 
                 }
@@ -230,7 +215,7 @@
         $('#phone-mail').focusout(function(){
             var value = $(this).val();
             if (value != '') {
-                if ((!this.value.match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/)) && (!this.value.match(/^\d+$/))) {
+                if (!this.value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/)){
                     $(this).removeClass('validInput').addClass('errorInput');
 
                 }
