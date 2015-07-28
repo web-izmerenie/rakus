@@ -1,14 +1,13 @@
 <?define('NO_FORM', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("О компании");
-?>
-<div class="about_block">
+?><div class="about_block">
 	<h1>о компании</h1>
 	<p>Компания «Ракурс» — стабильно развивающаяся компания,<Br/>поставляющая воздух  различного назначения для любых видов<br/>работ и отраслей.</p>
 </div>
 
 <div class="advantages_block">
-	<h2>Наши  приемущества:</h2>
+	<h2>Наши  преимущества:</h2>
 	<ul class="advantage-list">
 		<li>
 			<div class="advantage-list_img">
@@ -45,7 +44,7 @@ $APPLICATION->SetTitle("О компании");
 				<img src="<?=$tplPath;?>images/advantages-icon5.png" alt=""/>
 			</div>
 			<span>Индивидуальная<br/>цена для каждого клиента</span>
-			<p>Мы всегда готовы обсудить<br/>стоимость аренды компрессора,<br/>предоставляя вам оборудование<br/>на  выгодных для обоих сторон<br/>условиях по телефону</p>
+			<p>Мы всегда готовы обсудить<br/>стоимость аренды компрессора и<br/>предоставить вам оборудование<br/>на  выгодных условиях</p>
 		</li>
 	</ul>
 </div>

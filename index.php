@@ -1,7 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty("TITLE", "Rakus");
-$APPLICATION->SetTitle("Rakus");
+$APPLICATION->SetTitle("Rakurs-rent");
 ?><div class="main_block_1">
 	<h1>Аренда компрессоров</h1>
 	<h3>под любые задачи</h3>
