@@ -39,7 +39,7 @@ $this->setFrameMode(true);?>
 								</a>
 							</td>
 							<td class="td_2"><a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="name"><?=$arItem['NAME'];?></a></td>
-							<td class="td_3"><?=$arItem['PROPERTIES']['ATT_PRESSURE']['VALUE'];?> бар.</td>
+							<td class="td_3"><?=$arItem['PROPERTIES']['ATT_PRESSURE']['~VALUE'];?> бар.</td>
 							<td class="td_4"><?=$arItem['PROPERTIES']['ATT_PERFOMANCE']['VALUE'];?> м³/ мин.</td>
 							<td class="td_5">от <?=$arItem['PROPERTIES']['ATT_PRICE']['VALUE'];?> руб.</td>
 							<td class="td_6"><a href="#" class="border_btn popupOpen">АРЕНДОВАТЬ</a></td>

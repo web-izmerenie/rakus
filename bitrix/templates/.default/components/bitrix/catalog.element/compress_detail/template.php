@@ -29,14 +29,18 @@ $photo = CFile::ResizeImageGet($arResult['DETAIL_PICTURE'], array('width'=>540, 
 					<div class="image"><img src="<?=$photo['src'];?>" alt="<?=$arResult['DETAIL_PICTURE']['ALT']?>" /></div>
 				</div>
 				<div class="inr_right">
-					<ul class="list_desc"> 
-						<li><span>Рабочее давление</span><?=$arResult['PROPERTIES']['ATT_PRESSURE']['VALUE'];?> бар</li>
+					<ul class="list_desc">
+						<li><span>Рабочее давление</span><?=$arResult['PROPERTIES']['ATT_PRESSURE']['~VALUE'];?> бар</li>
 						<li><span>Производительность</span><?=$arResult['PROPERTIES']['ATT_PERFOMANCE']['VALUE'];?> м³/мин</li>
-						<li><span>Количество постов ¾</span><?=$arResult['PROPERTIES']['ATT_POST']['VALUE'];?></li>
-						<li><span>Расход ДТ</span><?=$arResult['PROPERTIES']['ATT_EXPENSE']['VALUE'];?> л/ч</li>
+						<li><span>Количество постов</span><?=$arResult['PROPERTIES']['ATT_POST']['VALUE'];?></li>
+						<?if(!empty($arResult['PROPERTIES']['ATT_EXPENSE']['VALUE'])){?>
+							<li><span>Расход <?=$arResult['PROPERTIES']['ATT_FUEL_VID']['VALUE']?></span>
+								<?=$arResult['PROPERTIES']['ATT_EXPENSE']['VALUE'];?> л/ч
+							</li>
+						<?}?>
 						<li>
 							<span>Размеры</span>
-							<?=$arResult['PROPERTIES']['ATT_LENGTH']['VALUE'];?> / 
+							<?=$arResult['PROPERTIES']['ATT_LENGTH']['VALUE'];?> /
 							<?=$arResult['PROPERTIES']['ATT_WIDTH']['VALUE'];?> /
 							<?=$arResult['PROPERTIES']['ATT_HEIGHT']['VALUE'];?> мм
 						</li>
