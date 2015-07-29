@@ -71,6 +71,7 @@ bitrix/virtual_file_system.php
 bitrix/web.config
 bitrix/wizards
 bitrix/updates
+bitrix/css
 
 # upload dir
 upload
