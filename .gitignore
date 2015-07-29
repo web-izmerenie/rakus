@@ -22,6 +22,7 @@ bitrix/templates/main/styles/src/sprites
 .source_of_symbolic_links
 robots.txt
 index.html
+smsc
 
 # bitrix tmp dirs
 bitrix/cache
@@ -70,7 +71,6 @@ bitrix/virtual_file_system.php
 bitrix/web.config
 bitrix/wizards
 bitrix/updates
-smsc
 
 # upload dir
 upload
