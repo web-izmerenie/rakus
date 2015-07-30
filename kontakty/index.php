@@ -6,7 +6,7 @@ $APPLICATION->SetTitle("Контакты");
 ?><?$APPLICATION->IncludeComponent("bitrix:news.list", "contacts", Array(
 	"IBLOCK_TYPE" => "content",	// Тип информационного блока (используется только для проверки)
 		"IBLOCK_ID" => "5",	// Код информационного блока
-		"NEWS_COUNT" => "1",	// Количество новостей на странице
+		"NEWS_COUNT" => "5",	// Количество новостей на странице
 		"SORT_BY1" => "ACTIVE_FROM",	// Поле для первой сортировки новостей
 		"SORT_ORDER1" => "DESC",	// Направление для первой сортировки новостей
 		"SORT_BY2" => "SORT",	// Поле для второй сортировки новостей
