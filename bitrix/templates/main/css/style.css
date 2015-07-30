@@ -995,17 +995,17 @@ footer .dev:after {
     font-weight: 400;
 }
 .contacts_block{
-    height: 250px;
-    padding:97px 0;
     padding-bottom: 6px;
     text-align: center;
+	height: 230px;
 }
-.contacts_block h1{
+.contacts h1{
     font-size: 50px;
     font-weight: 500;
     letter-spacing: -0.5px;
     text-transform: uppercase;
-    margin-bottom: 39px;
+	text-align: center;
+	margin-top: 200px;
 }
 .contacts_block p{
     font-size:15px;
@@ -1274,10 +1274,8 @@ footer .dev:after {
 
 }
 .сontent-contact .contacts_block{
-    height: 60vh!important;
     padding: 0!important;
     position: relative;
-    min-height: 230px!important;
 }
 .сontent-404 .breadcrumbs-btn{
     height: 36vh;
@@ -1316,9 +1314,6 @@ footer .dev:after {
 	text-decoration: none;
 }
 
-.сontent-contact .contacts_block{
-    min-height: 340px!important;
-}
 #content.content-item2{
     padding-top: 91px;
 }
@@ -1458,5 +1453,8 @@ footer .dev:after {
 	align-items: center;
 	margin-top: 20px;
 }
-
-
+.revezity{
+	padding-top: 20px;
+	display: block;
+	text-align: center;
+}

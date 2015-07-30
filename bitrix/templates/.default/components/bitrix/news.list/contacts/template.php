@@ -13,11 +13,11 @@
 $this->setFrameMode(true);
 ?>
 <?if($arResult['ITEMS']){?>
-	<div class="container">
-		<?foreach($arResult['ITEMS'] as $arItem){?>
+	<div class="container contacts">
+		<h1>Контакты</h1>
+		<?foreach($arResult['ITEMS'] as $k => $arItem){?>
 			<div class="contacts_block">
 				<div class="contact_block-wrap">
-					<h1>Контакты</h1>
 					<p><?=$arItem['PROPERTIES']['ATT_ADRES']['~VALUE']['TEXT'];?></p>
 					<span>
 						<?$last = count($arItem['PROPERTIES']['ATT_TEL']['VALUE']) - 1;
@@ -27,6 +27,9 @@ $this->setFrameMode(true);
 					</span>
 					<p><a href="mailto:<?=$arItem['PROPERTIES']['ATT_MAIL']['VALUE']?>">
 						<?=$arItem['PROPERTIES']['ATT_MAIL']['VALUE']?></a></p>
+					<?if($k === 1){?>
+						<a class="revezity" href="/upload/revezity.pdf" target="_blank">Реквезиты</a>
+					<?}?>
 				</div>
 			</div>
 		<?}?>
