@@ -28,7 +28,7 @@ $this->setFrameMode(true);
 					<p><a href="mailto:<?=$arItem['PROPERTIES']['ATT_MAIL']['VALUE']?>">
 						<?=$arItem['PROPERTIES']['ATT_MAIL']['VALUE']?></a></p>
 					<?if($k === 1){?>
-						<a class="revezity" href="/upload/revezity.pdf" target="_blank">Реквезиты</a>
+						<a class="revezity" href="/upload/revezity.pdf" target="_blank">Реквизиты</a>
 					<?}?>
 				</div>
 			</div>
