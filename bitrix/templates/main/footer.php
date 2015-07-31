@@ -8,10 +8,10 @@
 					)
 				);?>
 				<?if(!defined('NO_CONTACTS_BOTTOM')){?>
-					<div class="contact_block">
+					<!--<div class="contact_block">
 						<div class="text">Быстрая Аренда</div>
 						<div class="phone">
-							<?$APPLICATION->IncludeComponent(
+							<?/*$APPLICATION->IncludeComponent(
 								"bitrix:news.detail",
 								"phone_head",
 								array(
@@ -64,10 +64,10 @@
 									"AJAX_OPTION_ADDITIONAL" => ""
 								),
 								false
-							);?>
+							);*/?>
 							<span class="ieb">Ответим на все ваши вопросы. <br />Подберем нужное оборудование</span>
 						</div>
-					</div>
+					</div>-->
 				<?}?>
 				
 				<?if(!defined('NO_FORM')){?>
