@@ -1,8 +1,10 @@
 <?
 $tplPath = $APPLICATION->GetTemplatePath();
 $currentUrl = $APPLICATION->GetCurPageParam();
+$currentDir = $APPLICATION->GetCurDir();
 global $tplPath;
 global $currentUrl;
+global $currentDir;
 
 if(defined('CONTACT'))
 	$main_class = 'сontent-contact';
@@ -46,7 +48,11 @@ if(defined('SALE'))
 
 			<header class="clearfix">
 				<div class="container">
-					<a href="/" id="logo"><img src="<?=$tplPath;?>images/logo.png" alt="" /></a>
+					<?if($currentUrl === '/'){?>
+						<img id="logo" src="<?=$tplPath;?>images/logo.png" alt="логотип" />
+					<?}else{?>
+						<a href="/" id="logo" onclick="yaCounter31689301.reachGoal('LOGOTIP'); return true;"><img src="<?=$tplPath;?>images/logo.png" alt="логотип" /></a>
+					<?}?>
 					<div class="phone">
 						<?$APPLICATION->IncludeComponent(
 							"bitrix:news.detail",

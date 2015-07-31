@@ -42,7 +42,9 @@ $this->setFrameMode(true);?>
 							<td class="td_3"><?=$arItem['PROPERTIES']['ATT_PRESSURE']['~VALUE'];?> бар.</td>
 							<td class="td_4"><?=$arItem['PROPERTIES']['ATT_PERFOMANCE']['VALUE'];?> м³/ мин.</td>
 							<td class="td_5">от <?=$arItem['PROPERTIES']['ATT_PRICE']['VALUE'];?> руб.</td>
-							<td class="td_6"><a href="#" class="border_btn popupOpen">АРЕНДОВАТЬ</a></td>
+							<td class="td_6">
+								<a href="#" class="border_btn popupOpen" onclick="yaCounter31689301.reachGoal('BUTTON_RENT_ITEMS_KOMPRESS'); return true;">АРЕНДОВАТЬ</a>
+							</td>
 						</tr>
 					<?}?>
 				</tbody>

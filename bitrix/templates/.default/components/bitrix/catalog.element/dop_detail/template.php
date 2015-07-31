@@ -20,7 +20,7 @@ $this->setFrameMode(true);?>
 					<h1><?=$arResult['NAME']?></h1>
 				</div>
 				<div class="inr_right">
-					<a href="<?=$APPLICATION->GetCurDir();?>" class="border_btn">Каталог →</a>
+					<a href="<?=$APPLICATION->GetCurDir();?>" class="border_btn" onclick="yaCounter31689301.reachGoal('CATALOG_BACK');">Каталог →</a>
 				</div>
 			</div>
 			<div class="item_details_center clearfix">
@@ -41,7 +41,7 @@ $this->setFrameMode(true);?>
 		</div>
 		<div class="btn_buy">
 			<span class="price">от <?=$arResult['PROPERTIES']['ATT_PRICE']['VALUE']?> руб.</span>
-			<a href="#" class="popupOpen border_btn">АРЕНДОВАТЬ</a>
+			<a href="#" class="popupOpen border_btn" onclick="yaCounter31689301.reachGoal('BUTTON_RENT_DETAIL_DOP');">АРЕНДОВАТЬ</a>
 		</div>
 
 		<div class="type_work type_work_2">

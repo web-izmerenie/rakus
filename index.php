@@ -44,7 +44,7 @@ $APPLICATION->SetTitle("Rakurs-rent");
 			<li><span><a href="/kompressory"><img src="<?=$tplPath;?>images/item-3.jpg" alt="" /></a></span></li>
 		</ul>		
 		<div class="all">
-			<a href="/kompressory" class="border_btn">Каталог →</a>
+			<a href="/kompressory" class="border_btn" onclick="yaCounter31689301.reachGoal('MAIN_BUTTON_CATALOG'); return true;">Каталог →</a>
 		</div>			
 	</div>
 </div>

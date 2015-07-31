@@ -21,7 +21,7 @@ $photo = CFile::ResizeImageGet($arResult['DETAIL_PICTURE'], array('width'=>540, 
 					<h3><?=$arResult['PROPERTIES']['ATT_VIEW']['VALUE'];?> компрессор</h3>
 				</div>
 				<div class="inr_right">
-					<a href="<?=$APPLICATION->GetCurDir();?>" class="border_btn">Каталог →</a>
+					<a href="<?=$APPLICATION->GetCurDir();?>" class="border_btn" onclick="yaCounter31689301.reachGoal('CATALOG_BACK');">Каталог →</a>
 				</div>
 			</div>
 			<div class="item_details_center clearfix">
@@ -51,7 +51,7 @@ $photo = CFile::ResizeImageGet($arResult['DETAIL_PICTURE'], array('width'=>540, 
 		</div>
 		<div class="btn_buy">
 			<span class="price">от <?=$arResult['PROPERTIES']['ATT_PRICE']['VALUE'];?> руб.</span>
-			<a href="#" class="popupOpen border_btn">АРЕНДОВАТЬ</a>
+			<a href="#" class="popupOpen border_btn" onclick="yaCounter31689301.reachGoal('BUTTON_RENT_DETAIL_KOMPRESS'); return true;">АРЕНДОВАТЬ</a>
 		</div>
 
 		<div class="type_work">

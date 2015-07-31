@@ -38,7 +38,7 @@ $this->setFrameMode(true);?>
 							</td>
 							<td class="td_2"><a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="name"><?=$arItem['NAME'];?></a></td>
 							<td class="td_3">от <?=$arItem['PROPERTIES']['ATT_PRICE']['VALUE'];?> руб.</td>
-							<td class="td_4"><a href="#" class="border_btn popupOpen">АРЕНДОВАТЬ</a></td>
+							<td class="td_4"><a href="#" class="border_btn popupOpen" onclick="yaCounter31689301.reachGoal('BUTTON_RENT_ITEMS_DOP'); return true;">АРЕНДОВАТЬ</a></td>
 						</tr>
 					<?}?>
 				</tbody>
