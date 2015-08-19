@@ -53,8 +53,8 @@ if(defined('SALE'))
 					<?}else{?>
 						<a href="/" id="logo" onclick="yaCounter31689301.reachGoal('LOGOTIP'); return true;"><img src="<?=$tplPath;?>images/logo.png" alt="логотип" /></a>
 					<?}?>
-					<!--<div class="phone">
-						<?/*$APPLICATION->IncludeComponent(
+					<div class="phone">
+						<?$APPLICATION->IncludeComponent(
 							"bitrix:news.detail",
 							"phone_head",
 							array(
@@ -107,8 +107,8 @@ if(defined('SALE'))
 								"AJAX_OPTION_ADDITIONAL" => ""
 							),
 							false
-						);*/?>
-					</div>-->
+						);?>
+					</div>
 					<?$APPLICATION->IncludeComponent("bitrix:menu", "main", Array(
 						"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
 							"MENU_CACHE_TYPE" => "N",	// Тип кеширования

@@ -8,10 +8,10 @@
 					)
 				);?>
 				<?if(!defined('NO_CONTACTS_BOTTOM')){?>
-					<!--<div class="contact_block">
+					<div class="contact_block">
 						<div class="text">Быстрая Аренда</div>
 						<div class="phone">
-							<?/*$APPLICATION->IncludeComponent(
+							<?$APPLICATION->IncludeComponent(
 								"bitrix:news.detail",
 								"phone_head",
 								array(
@@ -64,15 +64,15 @@
 									"AJAX_OPTION_ADDITIONAL" => ""
 								),
 								false
-							);*/?>
+							);?>
 							<span class="ieb">Ответим на все ваши вопросы. <br />Подберем нужное оборудование</span>
 						</div>
-					</div>-->
+					</div>
 				<?}?>
-				
+
 				<?if(!defined('NO_FORM')){?>
 					<div class="help_block">
-						<form method="post" action="/ajax/application.php" 
+						<form method="post" action="/ajax/application.php"
 							  <?switch($currentDir){
 									case '/':
 										echo 'onsubmit="yaCounter31689301.reachGoal(\'SUBMIT_FORM_MAIN\'); return true;"';
@@ -115,7 +115,7 @@
 										}?>>
 								<span class="ieb">Ответим в течение часа</span>
 							</div>
-						</form>	
+						</form>
 					</div>
 				<?}?>
 				<?$APPLICATION->IncludeComponent(
@@ -134,7 +134,7 @@
 						"ALLOW_MULTI_SELECT" => "N"
 					)
 				);?>
-			</div>		
+			</div>
 		  	<footer>
 		  		<div class="container">
 					<?$APPLICATION->IncludeComponent("bitrix:news.list", "footer_link_doc", Array(
@@ -196,7 +196,7 @@
 					);?>
 		  			<a href="http://web-izmerenie.ru/" class="dev ieb">Сделано <span>в</span></a>
 		  		</div>
-		  	</footer>   
+		  	</footer>
 
 		</div>
 
@@ -214,7 +214,7 @@
 							default:
 								echo 'onsubmit="yaCounter31689301.reachGoal(\'SUBMIT_DETAIL_RENT\'); return true"';
 						}?>>
-                    <input type="text" name="name" value="Ваше имя" id="name-input" class="inp1 placeholder-1" 
+                    <input type="text" name="name" value="Ваше имя" id="name-input" class="inp1 placeholder-1"
 						   <?switch($currentUrl){
 								case '/kompressory/':
 									echo 'onclick="yaCounter31689301.reachGoal(\'INPUT_RENT_KOMPRESSORY\'); return true"';
@@ -225,7 +225,7 @@
 								default:
 									echo 'onclick="yaCounter31689301.reachGoal(\'INPUT_DETAIL_RENT\'); return true"';
 							}?>/>
-                    <input type="text" name="tel" value="Телефон или почта" id="phone-mail" class="inp2 placeholder-2" 
+                    <input type="text" name="tel" value="Телефон или почта" id="phone-mail" class="inp2 placeholder-2"
 						    <?switch($currentUrl){
 								case '/kompressory/':
 									echo 'onclick="yaCounter31689301.reachGoal(\'INPUT_RENT_KOMPRESSORY\'); return true"';
@@ -237,7 +237,7 @@
 									echo 'onclick="yaCounter31689301.reachGoal(\'INPUT_DETAIL_RENT\'); return true"';
 							}?>/>
 					<input type="hidden" name="model" value="Модель не указана" />
-                    <input type="submit" value="Отправить" class="border_btn sub-btn" 
+                    <input type="submit" value="Отправить" class="border_btn sub-btn"
 						   <?switch($currentUrl){
 								case '/kompressory/':
 									echo 'onclick="yaCounter31689301.reachGoal(\'SENT_RENT_KOMPRESSORY\'); return true"';
