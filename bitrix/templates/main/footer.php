@@ -73,7 +73,7 @@
 				<?if(!defined('NO_FORM')){?>
 					<div class="help_block">
 						<form method="post" action="/ajax/application.php"
-							  <?switch($currentDir){
+							<?switch($currentDir){
 									case '/':
 										echo 'onsubmit="yaCounter31689301.reachGoal(\'SUBMIT_FORM_MAIN\'); return true;"';
 										break;
@@ -84,6 +84,7 @@
 										echo 'onsubmit="yaCounter31689301.reachGoal(\'SUBMIT_FORM_DOP\'); return true"';
 										break;
 								}?>>
+							<input type="text" name="q" value="">
 							<div class="text">
 								<p>Если вы не уверены в выборе или не нашли, что искали, опишите здесь свою проблему, а мы подготовим для вас предложение и сами с вами свяжемся. </p>
 								<p>Не забудте указать контактную информацию!</p>
@@ -214,8 +215,9 @@
 							default:
 								echo 'onsubmit="yaCounter31689301.reachGoal(\'SUBMIT_DETAIL_RENT\'); return true"';
 						}?>>
-                    <input type="text" name="name" value="Ваше имя" id="name-input" class="inp1 placeholder-1"
-						   <?switch($currentUrl){
+						<input type="text" name="q" value="">
+						<input type="text" name="name" value="Ваше имя" id="name-input" class="inp1 placeholder-1"
+						<?switch($currentUrl){
 								case '/kompressory/':
 									echo 'onclick="yaCounter31689301.reachGoal(\'INPUT_RENT_KOMPRESSORY\'); return true"';
 									break;
